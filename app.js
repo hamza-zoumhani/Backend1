@@ -3,7 +3,7 @@ var app = express();
 var port = 3000;
 
 app.get('/helloworld', function(req, res){
-    res.send("Hello World!");
+    res.json({ message: 'hello'});
 });
 
 app.get('/helloworld', function(req, res){
