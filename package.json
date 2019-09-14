@@ -1,0 +1,25 @@
+{
+  "name": "w1",
+  "version": "1.0.0",
+  "description": "Try number 2",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamza-zoumhani/Backend1.git"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "Hamza Zoumhani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hamza-zoumhani/Backend1/issues"
+  },
+  "homepage": "https://github.com/hamza-zoumhani/Backend1#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
