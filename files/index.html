@@ -6,19 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" 
-        crossorigin="anonymous"></script>
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
     <title>Document</title>
 </head>
 
 <body>
-    <h1 id="main">This is my very empty website</h1>
+    <h1 id="main">List of quotes I was forced to come up with!</h1>
     <script>
-        $.getJSON("message/1", function (data) {
-            var old = document.getElementById("main").innerHTML
-            document.getElementById("main").innerHTML = old + "<br>" + data.message;
-        });
+            $.getJSON("quotes", function (data) {
+                var items = [];
+                $.each(data, function (key, val) {
+                    items.push("<li id='" + key + "'>" + val + "</li>");
+                });
+
+                $("<ul/>", {
+                    "class": "my-new-list",
+                    html: items.join("")
+                }).appendTo("body");
+            });
+        // $.getJSON("message/1", function (data) {
+        //     var old = document.getElementById("main").innerHTML
+        //     document.getElementById("main").innerHTML = old + "<br>" + data.message;
+        // });
     </script>
 
 </body>

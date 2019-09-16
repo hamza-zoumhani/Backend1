@@ -32,6 +32,19 @@ app.get('/message/for/id:', function(req, res){
     res.json({message: "This is message one"});
 });
 
+app.get('/quotes', function(req, res){
+    res.json({quote1: "Tabs are better than spaces!",
+              quote2: " ",
+              quote3: "Tabs are better than spaces!",
+              quote4: "Tabs are better than spaces!",
+              quote5: "Tabs are better than spaces!",
+              quote6: "Tabs are better than spaces!",
+              quote7: "Tabs are better than spaces!",
+              quote8: "Tabs are better than spaces!",
+              quote9: "Tabs are better than spaces!",
+              quote10: "Tabs are better than spaces!",});
+});
+
 app.listen(port, function(){
     console.log("Express running on port: " + port);
 })
