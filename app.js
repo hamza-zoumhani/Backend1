@@ -34,7 +34,7 @@ app.get('/message/for/id:', function(req, res){
 
 app.get('/quotes', function(req, res){
     res.json({quote1: "Tabs are better than spaces!",
-              quote2: " ",
+              quote2: "Tabs are better than spaces! ",
               quote3: "Tabs are better than spaces!",
               quote4: "Tabs are better than spaces!",
               quote5: "Tabs are better than spaces!",
